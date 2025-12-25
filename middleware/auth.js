@@ -14,7 +14,7 @@ exports.authenticate = async (req, res, next) => {
     }
 
     const token = authHeader.replace('Bearer ', '');
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded =  await jwt.verify(token, process.env.JWT_SECRET);
 
     const user = await User.findById(decoded.id).select('-password');
 
