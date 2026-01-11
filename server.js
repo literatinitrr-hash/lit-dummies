@@ -3,9 +3,9 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import authRoutes from "../routes/auth.js";
-import userRoutes from "../routes/user.js";
-import adminRoutes from "../routes/admin.js";
+import authRoutes from "./routes/auth.js";
+import userRoutes from "./routes/user.js";
+import adminRoutes from "./routes/admin.js";
 
 dotenv.config();
 
