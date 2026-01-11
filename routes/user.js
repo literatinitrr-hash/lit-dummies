@@ -1,7 +1,7 @@
 
 import express from 'express';
-const User = require('../models/User');
-const {authenticate} = require("../middleware/auth");
+const User = import('../models/User');
+const {authenticate} = import("../middleware/auth");
 const router = express.Router();
 
 
