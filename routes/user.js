@@ -1,7 +1,7 @@
-
 import express from 'express';
-const User = import('../models/User');
-const {authenticate} = import("../middleware/auth");
+import User from '../models/User.js';
+import { authenticate } from '../middleware/auth.js';
+
 const router = express.Router();
 
 
