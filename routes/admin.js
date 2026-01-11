@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 const User = require('../models/User');
 const Point = require('../models/Point');
 const { authenticate, authorize } = require('../middleware/auth');
@@ -67,4 +67,4 @@ router.get(
     }
 );
 
-module.exports = router;
+export default router;
